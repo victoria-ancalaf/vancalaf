@@ -33,7 +33,7 @@ export const NavLogo = styled(LinkRouter)`
   color: #fbf8ff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 2.9 rem;
+  font-size: 2.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
