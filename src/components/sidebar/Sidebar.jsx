@@ -11,18 +11,18 @@ import {
   GithubIcon,
 } from "./SidebarElements";
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, toggle}) => {
   return (
-    <SidebarContainer>
-      <Icon>
+    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about">Acerca de mí</SidebarLink>
-          <SidebarLink to="skills">Habilidades</SidebarLink>
-          <SidebarLink to="projects">Proyectos</SidebarLink>
-          <SidebarLink to="contact">Contacto</SidebarLink>
+          <SidebarLink to="about" onClick={toggle}>Acerca de mí</SidebarLink>
+          <SidebarLink to="skills" onClick={toggle}>Habilidades</SidebarLink>
+          <SidebarLink to="projects" onClick={toggle}>Proyectos</SidebarLink>
+          <SidebarLink to="contact" onClick={toggle}>Contacto</SidebarLink>
         </SidebarMenu>
         <SidebarBtn>
           <LinkedinIcon />
