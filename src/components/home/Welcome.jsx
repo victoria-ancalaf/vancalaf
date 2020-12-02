@@ -4,7 +4,7 @@ import { WelcomeContainer, WelcomeBg, VideoBg, WelcomeContent, WelcomeH1, Welcom
 
 const Welcome = () => {
   return (
-    <WelcomeContainer>
+    <WelcomeContainer name='/'>
       <WelcomeBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </WelcomeBg>

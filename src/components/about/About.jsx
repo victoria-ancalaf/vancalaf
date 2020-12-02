@@ -9,7 +9,7 @@ import {
 
 const About = () => {
   return (
-    <AboutContainer>
+    <AboutContainer name='about'>
       <AboutContent>
         <AboutP>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in

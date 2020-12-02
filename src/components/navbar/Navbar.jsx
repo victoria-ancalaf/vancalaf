@@ -11,33 +11,76 @@ import {
   NavEnEs,
 } from "./NavbarElements";
 import { FaBars } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = ({ toggle }) => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">VA</NavLogo>
+          <NavLogo to="/" onClick={toggleHome}>
+            VA
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">Acerca de mí</NavLinks>
+              <NavLinks
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Acerca de mí
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="skills">Habilidades</NavLinks>
+              <NavLinks
+                to="skills"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Habilidades
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="projects">Proyectos</NavLinks>
+              <NavLinks
+                to="projects"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Proyectos
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact">Contacto</NavLinks>
+              <NavLinks
+                to="contact"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Contacto
+              </NavLinks>
             </NavItem>
           </NavMenu>
           <NavTranslate>
-              <NavEnEs>ES | EN</NavEnEs>
-            </NavTranslate>
+            <NavEnEs>ES | EN</NavEnEs>
+          </NavTranslate>
         </NavbarContainer>
       </Nav>
     </>
