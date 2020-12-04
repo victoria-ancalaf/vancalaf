@@ -22,6 +22,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 80px;
   z-index: 1;
   width: 100%;
@@ -79,6 +80,7 @@ export const NavLinks = styled(LinkScroll)`
   display: flex;
   align-items: center;
   font-family: "Sarabun", sans-serif;
+  font-size: 1.25rem;
   color: #5d576a;
   text-decoration: none;
   padding: 0 1rem;
@@ -86,7 +88,7 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #3B2884;
   }
 `;
 
