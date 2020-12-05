@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(158, 127, 231, 0.3);
+  background: ${({ scrollNav }) => (scrollNav ? '#3B2884' : 'rgba(158, 127, 231, 0.3)')};
   height: 80px;
   margin-top: -80px; 
 
@@ -81,14 +81,14 @@ export const NavLinks = styled(LinkScroll)`
   align-items: center;
   font-family: "Sarabun", sans-serif;
   font-size: 1.25rem;
-  color: #5d576a;
+  color: #fbf8ff;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #3B2884;
+    border-bottom: 4px solid #9E7FE7;
   }
 `;
 
@@ -106,7 +106,7 @@ export const NavEnEs = styled.nav`
     font-family: "Sarabun", sans-serif;
     font-weight: 200;
     font-size: 1.25rem;
-    color: #000000;
+    color: #fbf8ff;
     padding: 10px 22px;
     cursor: pointer;
     text-decoration: none;

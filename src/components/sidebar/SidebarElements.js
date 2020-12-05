@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { FaTimes, FaGithubSquare } from 'react-icons/fa'
 import { ImLinkedin } from 'react-icons/im'
-import { Link as LinkScroll } from 'react-router-dom'
+import { Link as LinkScroll } from 'react-scroll'
 
 export const SidebarContainer = styled.aside`
     display: grid;

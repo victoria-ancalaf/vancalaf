@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Vi from "../../img/Vi.jpg";
+import Victoria from "../../img/Victoria.jpg";
 
 export const AboutContainer = styled.div`
   display: flex;
@@ -8,8 +9,9 @@ export const AboutContainer = styled.div`
   background: #fbf8ff;
 
   @media screen and (max-width: 768px) {
-    flex-direction: column-reverse;
-    justify-content: space-around;
+    /* flex-direction: column-reverse;
+    justify-content: space-around; */
+    flex-wrap: wrap-reverse;
   }
 `;
 
@@ -23,6 +25,7 @@ export const AboutContent = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
     height: 50%;
+    align-items: flex-start;
   }
 `;
 
@@ -30,21 +33,26 @@ export const AboutP = styled.p`
   font-family: "Sarabun", sans-serif;
   font-weight: 200;
   font-size: 20px;
+  color: #3b2884;
 
   @media screen and (max-width: 768px) {
     font-size: 17px;
+    width: 280px;
   }
 `;
 
 export const AboutPhoto = styled.div`
   width: 40%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0 50px;
 
   @media screen and (max-width: 768px) {
     width: 100%;
     height: 50%;
+    justify-content: center;
+    padding: 0;
   }
 `;
 
@@ -52,10 +60,14 @@ export const PhotoVi = styled.div`
   width: 242px;
   height: 242px;
   border-radius: 50%;
-  background-image: url(${Vi});
+  background-image: url(${Victoria});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  &:hover {
+    background-image: url(${Vi});
+  }
 
   @media screen and (max-width: 768px) {
     width: 200px;

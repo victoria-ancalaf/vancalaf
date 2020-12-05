@@ -9,14 +9,14 @@ import {
 
 const About = () => {
   return (
-    <AboutContainer name='about'>
+    <AboutContainer name="about">
       <AboutContent>
         <AboutP>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in
-          tellus a mi semper fringilla. Nam eu velit et enim cursus rutrum.
-          Pellentesque id felis sagittis neque pretium sagittis ut vitae augue.
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-          per inceptos himenaeos.
+          Desarrolladora Front-End y Traductora Inglés-Español de profesión. Soy
+          una apasionada por el aprendizaje y busco la forma de desafiarme a mi
+          misma, para ver que tan lejos puedo llegar, de esta forma puedo
+          demostrar mi perseverancia, adaptabilidad, honestidad y trabajo
+          colaborativo.
         </AboutP>
       </AboutContent>
       <AboutPhoto>

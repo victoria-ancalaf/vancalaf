@@ -47,7 +47,7 @@ export const WelcomeH1 = styled.h1`
     font-style: normal;
     font-weight: 100;
     color: #4931A2;
-    font-size: 3.3125rem;
+    font-size: 4rem;
     text-align: center;
 
     @media screen and (max-width: 768px) {
