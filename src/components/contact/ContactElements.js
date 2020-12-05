@@ -7,12 +7,21 @@ export const ContactContainer = styled.div`
   width: 100%;
   height: 100vh;
   background: #fbf8ff;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const ContactMail = styled.div`
   display: flex;
   width: 50%;
-  background: #9E7FE7;
+  background: #9e7fe7;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 50%;
+  }
 `;
 
 export const ContainerMail = styled.div`
@@ -20,6 +29,12 @@ export const ContainerMail = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 0 145px;
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
 `;
 
 export const ContactH3 = styled.h3`
@@ -28,12 +43,17 @@ export const ContactH3 = styled.h3`
   font-size: 20px;
   color: #fbf8ff;
   max-width: 600px;
+
+  @media screen and (max-width: 768px) {
+    font-weight: 200;
+    font-size: 18px;
+  }
 `;
 
 export const ContactBtn = styled.button`
   width: 150px;
   height: 50px;
-  background: #3B2884;
+  background: #3b2884;
   border-radius: 5px;
   border-style: none;
   font-family: "Sarabun", sans-serif;
@@ -41,12 +61,23 @@ export const ContactBtn = styled.button`
   color: #ffffff;
   margin-top: 48px;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+  }
 `;
 
 export const ContactLinks = styled.div`
   display: flex;
   width: 50%;
   background: #fbf8ff;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 50%;
+  }
 `;
 
 export const ContainerLinks = styled.div`
@@ -54,6 +85,12 @@ export const ContainerLinks = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 0 145px;
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
 `;
 
 export const ContactH3Dark = styled.h3`
@@ -69,6 +106,11 @@ export const ContactIcons = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
+
+  @media screen and (max-width: 768px) {
+    width: 200px;
+    justify-content: space-evenly;
+  }
 `;
 
 export const LinkedinIcon = styled(FaLinkedin)`
@@ -76,6 +118,11 @@ export const LinkedinIcon = styled(FaLinkedin)`
   height: 60px;
   color: #9e7fe7;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    width: 45px;
+    height: 45px;
+  }
 `;
 
 export const GithubIcon = styled(FaGithubSquare)`
@@ -83,6 +130,11 @@ export const GithubIcon = styled(FaGithubSquare)`
   height: 60px;
   color: #9e7fe7;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    width: 45px;
+    height: 45px;
+  }
 `;
 
 export const CvIcon = styled(IoDocumentAttach)`
@@ -90,4 +142,9 @@ export const CvIcon = styled(IoDocumentAttach)`
   height: 60px;
   color: #9e7fe7;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    width: 45px;
+    height: 45px;
+  }
 `;
