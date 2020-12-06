@@ -100,7 +100,7 @@ const Projects = () => {
             </Link>
             <Link
               to={{
-                pathname: "https://coffe-queen.web.app/",
+                pathname: "https://comida-para-todos-644ce.web.app/",
               }}
               target="_blank"
             >
