@@ -1,6 +1,7 @@
 import React from "react";
 import {
   ProjectsContainer,
+  ProjectsCardContainer,
   ProjectCard,
   ProjectImage,
   Pokemon,
@@ -11,12 +12,14 @@ import {
   DescriptionP,
   DescriptionContainerBtn,
   DescriptionBtn,
+  DescriptionBtnLight,
 } from "./ProjectsElements";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
     <ProjectsContainer name="projects">
+      <ProjectsCardContainer>
       <ProjectCard>
         <ProjectImage>
           <Pokemon />
@@ -34,7 +37,7 @@ const Projects = () => {
               }}
               target="_blank"
             >
-              <DescriptionBtn>GitHub</DescriptionBtn>
+              <DescriptionBtnLight>GitHub</DescriptionBtnLight>
             </Link>
             <Link
               to={{
@@ -64,7 +67,7 @@ const Projects = () => {
               }}
               target="_blank"
             >
-              <DescriptionBtn>GitHub</DescriptionBtn>
+              <DescriptionBtnLight>GitHub</DescriptionBtnLight>
             </Link>
             <Link
               to={{
@@ -93,7 +96,7 @@ const Projects = () => {
               }}
               target="_blank"
             >
-              <DescriptionBtn>GitHub</DescriptionBtn>
+              <DescriptionBtnLight>GitHub</DescriptionBtnLight>
             </Link>
             <Link
               to={{
@@ -122,7 +125,7 @@ const Projects = () => {
               }}
               target="_blank"
             >
-              <DescriptionBtn>GitHub</DescriptionBtn>
+              <DescriptionBtnLight>GitHub</DescriptionBtnLight>
             </Link>
             <Link
               to={{
@@ -135,6 +138,7 @@ const Projects = () => {
           </DescriptionContainerBtn>
         </ProjectDescription>
       </ProjectCard>
+      </ProjectsCardContainer>
     </ProjectsContainer>
   );
 };

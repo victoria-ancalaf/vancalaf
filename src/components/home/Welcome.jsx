@@ -1,12 +1,12 @@
 import React from "react";
-import Video from "../../video/video.mp4";
+
 import { WelcomeContainer, WelcomeBg, VideoBg, WelcomeContent, WelcomeH1, WelcomeH2 } from "./WelcomeElements";
 
 const Welcome = () => {
   return (
     <WelcomeContainer name='/'>
       <WelcomeBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        <VideoBg />
       </WelcomeBg>
       <WelcomeContent>
         <WelcomeH1>Victoria Ancalaf</WelcomeH1>

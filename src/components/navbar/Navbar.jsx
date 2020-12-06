@@ -8,7 +8,7 @@ import {
   NavItem,
   NavLinks,
   NavTranslate,
-  NavEnEs,
+  // NavEnEs,
 } from "./NavbarElements";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
@@ -91,9 +91,9 @@ const Navbar = ({ toggle }) => {
               </NavLinks>
             </NavItem>
           </NavMenu>
-          <NavTranslate>
+          {/* <NavTranslate>
             <NavEnEs>ES | EN</NavEnEs>
-          </NavTranslate>
+          </NavTranslate> */}
         </NavbarContainer>
       </Nav>
     </>

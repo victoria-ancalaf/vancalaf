@@ -18,6 +18,16 @@ export const ProjectsContainer = styled.div`
   }
 `;
 
+export const ProjectsCardContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 145px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 200px;
+`;
+
 export const ProjectCard = styled.div`
   width: 350px;
   height: 350px;
@@ -25,6 +35,7 @@ export const ProjectCard = styled.div`
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  margin: 10px;
 
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -110,5 +121,16 @@ export const DescriptionBtn = styled.button`
 
   &:hover {
     background: #5f36bf;
+  }
+`;
+
+export const DescriptionBtnLight = styled(DescriptionBtn)`
+  background-color: transparent;
+  border: 2px solid #5f36bf;
+  color: #5f36bf;
+
+  &:hover {
+    background: #5f36bf;
+    color: #ffffff;
   }
 `;

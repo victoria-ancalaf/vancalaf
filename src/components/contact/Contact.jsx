@@ -23,8 +23,9 @@ const Contact = () => {
             Si tienes alguna pregunta o necesitas contactarme, puedes escribirme
             a este correo electrónico:
           </ContactH3>
-
+          <a href="mailto:viancalaf@gmail.com">
           <ContactBtn>Escribeme</ContactBtn>
+          </a>
         </ContainerMail>
       </ContactMail>
       <ContactLinks>

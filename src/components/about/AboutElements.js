@@ -9,8 +9,6 @@ export const AboutContainer = styled.div`
   background: #fbf8ff;
 
   @media screen and (max-width: 768px) {
-    /* flex-direction: column-reverse;
-    justify-content: space-around; */
     flex-wrap: wrap-reverse;
   }
 `;
@@ -77,3 +75,4 @@ export const PhotoVi = styled.div`
     height: 200px;
   }
 `;
+

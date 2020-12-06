@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import Video from "../../video/video.gif";
+
 
 export const WelcomeContainer = styled.div`
   display: flex;
-  /* justify-content: flex-start; */
   align-items: center;
   background: #fbf8ff;
   padding: 0 30px;
@@ -25,9 +26,16 @@ export const WelcomeBg = styled.div`
 export const VideoBg = styled.video`
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
-  background: #fbf8ff;
+  background-image: url(${Video});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 64%;
+
+  @media screen and (max-width: 768px) {
+    opacity: 90%;
+  }
 `;
 
 export const WelcomeContent = styled.div`
@@ -49,11 +57,13 @@ export const WelcomeH1 = styled.h1`
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    font-size: 45px;
+    font-size: 50px;
+    color: #fbf8ff;
   }
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
+    color: #fbf8ff;
   }
 `;
 
@@ -66,9 +76,11 @@ export const WelcomeH2 = styled.h2`
 
   @media screen and (max-width: 768px) {
     font-size: 23px;
+    color: #fbf8ff;
   }
 
   @media screen and (max-width: 480px) {
     font-size: 18px;
+    color: #fbf8ff;
   }
 `;

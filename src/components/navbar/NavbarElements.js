@@ -102,12 +102,12 @@ export const NavTranslate = styled.nav`
   }
 `
 
-export const NavEnEs = styled.nav`
-    font-family: "Sarabun", sans-serif;
-    font-weight: 200;
-    font-size: 1.25rem;
-    color: #fbf8ff;
-    padding: 10px 22px;
-    cursor: pointer;
-    text-decoration: none;
-`
+// export const NavEnEs = styled.nav`
+//     font-family: "Sarabun", sans-serif;
+//     font-weight: 200;
+//     font-size: 1.25rem;
+//     color: #fbf8ff;
+//     padding: 10px 22px;
+//     cursor: pointer;
+//     text-decoration: none;
+// `
