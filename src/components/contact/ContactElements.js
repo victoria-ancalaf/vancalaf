@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
-import { IoDocumentAttach } from "react-icons/io5";
 
 export const ContactContainer = styled.div`
   display: flex;
@@ -32,8 +31,7 @@ export const ContainerMail = styled.div`
 
   @media screen and (max-width: 768px) {
     align-items: center;
-    margin: 0;
-    padding: 0;
+    padding: 0 30px;
   }
 `;
 
@@ -53,7 +51,7 @@ export const ContactH3 = styled.h3`
 export const ContactBtn = styled.button`
   width: 150px;
   height: 50px;
-  background: #3b2884;
+  background: #5F36BF;
   border-radius: 5px;
   border-style: none;
   font-family: "Sarabun", sans-serif;
@@ -61,6 +59,11 @@ export const ContactBtn = styled.button`
   color: #ffffff;
   margin-top: 48px;
   cursor: pointer;
+
+  &:hover {
+    background: #fefedf;
+    color: #5F36BF;
+  }
 
   @media screen and (max-width: 768px) {
     width: 130px;
@@ -73,6 +76,7 @@ export const ContactLinks = styled.div`
   display: flex;
   width: 50%;
   background: #fbf8ff;
+  justify-content: center;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -88,8 +92,7 @@ export const ContainerLinks = styled.div`
 
   @media screen and (max-width: 768px) {
     align-items: center;
-    margin: 0;
-    padding: 0;
+    padding: 0 30px;
   }
 `;
 
@@ -102,7 +105,7 @@ export const ContactH3Dark = styled.h3`
 `;
 
 export const ContactIcons = styled.div`
-  width: 300px;
+  width: 200px;
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
@@ -119,6 +122,10 @@ export const LinkedinIcon = styled(FaLinkedin)`
   color: #9e7fe7;
   cursor: pointer;
 
+  &:hover {
+    color: #5F36BF;
+  }
+
   @media screen and (max-width: 768px) {
     width: 45px;
     height: 45px;
@@ -131,17 +138,9 @@ export const GithubIcon = styled(FaGithubSquare)`
   color: #9e7fe7;
   cursor: pointer;
 
-  @media screen and (max-width: 768px) {
-    width: 45px;
-    height: 45px;
+  &:hover {
+    color: #5F36BF;
   }
-`;
-
-export const CvIcon = styled(IoDocumentAttach)`
-  width: 60px;
-  height: 60px;
-  color: #9e7fe7;
-  cursor: pointer;
 
   @media screen and (max-width: 768px) {
     width: 45px;

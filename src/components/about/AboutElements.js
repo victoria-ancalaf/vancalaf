@@ -39,8 +39,6 @@ export const AboutP = styled.p`
     font-size: 17px;
     width: 280px;
     align-items: center;
-    margin: 0;
-    padding: 0;
   }
 `;
 
@@ -55,6 +53,7 @@ export const AboutPhoto = styled.div`
     width: 100%;
     height: 50%;
     justify-content: center;
+    align-items: flex-end;
     padding: 0;
   }
 `;
@@ -70,6 +69,7 @@ export const PhotoVi = styled.div`
 
   &:hover {
     background-image: url(${Vi});
+    transition: ease;
   }
 
   @media screen and (max-width: 768px) {

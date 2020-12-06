@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  background: ${({ scrollNav }) => (scrollNav ? '#3B2884' : 'rgba(158, 127, 231, 0.3)')};
+  background: ${({ scrollNav }) => (scrollNav ? '#5F36BF' : 'rgba(158, 127, 231, 0.3)')};
   height: 80px;
   margin-top: -80px; 
 
@@ -88,7 +88,7 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 4px solid #9E7FE7;
+    border-bottom: 4px solid #fefedf;
   }
 `;
 
