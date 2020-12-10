@@ -6,18 +6,15 @@ import {
   AboutPhoto,
   PhotoVi,
 } from "./AboutElements";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <AboutContainer name="about">
       <AboutContent>
-        <AboutP>
-          Desarrolladora Front-End y Traductora Inglés-Español de profesión.
-          Tengo gran interés en adquirir nuevos conocimientos y busco la forma
-          de desafiarme a mi misma, para ver que tan lejos puedo llegar, de esta
-          forma puedo demostrar mi perseverancia, adaptabilidad, honestidad y
-          trabajo colaborativo.
-        </AboutP>
+        <AboutP>{t("about.about-paragraph")}</AboutP>
       </AboutContent>
       <AboutPhoto>
         <PhotoVi alt="Victoria"></PhotoVi>

@@ -10,9 +10,10 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  background: ${({ scrollNav }) => (scrollNav ? '#5F36BF' : 'rgba(158, 127, 231, 0.3)')};
+  background: ${({ scrollNav }) =>
+    scrollNav ? "#5F36BF" : "rgba(158, 127, 231, 0.3)"};
   height: 80px;
-  margin-top: -80px; 
+  margin-top: -80px;
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -57,7 +58,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #9E7FE7;
+    color: #9e7fe7;
   }
 `;
 
@@ -92,22 +93,28 @@ export const NavLinks = styled(LinkScroll)`
   }
 `;
 
-
 export const NavTranslate = styled.nav`
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
 
-    @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
-`
+`;
 
-// export const NavEnEs = styled.nav`
-//     font-family: "Sarabun", sans-serif;
-//     font-weight: 200;
-//     font-size: 1.25rem;
-//     color: #fbf8ff;
-//     padding: 10px 22px;
-//     cursor: pointer;
-//     text-decoration: none;
-// `
+export const NavEnEs = styled.div`
+  font-family: "Sarabun", sans-serif;
+  font-size: 1rem;
+  color: #fbf8ff;
+`;
+
+export const BtnTranslation = styled.button`
+  cursor: pointer;
+  background: transparent;
+  border-style: none;
+  font-family: "Sarabun", sans-serif;
+  font-size: 1rem;
+  color: #fbf8ff;
+`;

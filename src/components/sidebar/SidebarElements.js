@@ -35,6 +35,39 @@ export const SidebarWrapper = styled.div`
   color: #fbf8ff;
 `;
 
+export const SidebarTranslation = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+`;
+
+export const ContainerBtns = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 87px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #fbf8ff;
+`;
+
+export const NavEnEs = styled.div`
+  font-family: "Sarabun", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  color: #5F36BF;
+`;
+
+export const BtnTranslation = styled.button`
+  cursor: pointer;
+  background: transparent;
+  border-style: none;
+  font-family: "Sarabun", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  color: #5F36BF;
+`;
+
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;

@@ -22,10 +22,11 @@ export const ProjectsCardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 0 145px;
 
   @media screen and (max-width: 768px) {
-    margin-top: 200px;
+    padding-top: 200px;
+    margin: 0px;
+  }
 `;
 
 export const ProjectCard = styled.div`

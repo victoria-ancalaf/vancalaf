@@ -5,32 +5,51 @@ import {
   CloseIcon,
   SidebarLink,
   SidebarWrapper,
+  SidebarTranslation,
+  ContainerBtns,
+  NavEnEs,
+  BtnTranslation,
   SidebarMenu,
   SidebarBtn,
   LinkedinIcon,
   GithubIcon,
 } from "./SidebarElements";
 import { Link } from "react-router-dom";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 
 const Sidebar = ({ isOpen, toggle }) => {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
+        <SidebarTranslation>
+          <ContainerBtns>
+            <BtnTranslation onClick={() => i18next.changeLanguage("es")}>
+              ES
+            </BtnTranslation>
+            <NavEnEs>|</NavEnEs>
+            <BtnTranslation onClick={() => i18next.changeLanguage("en")}>
+              EN
+            </BtnTranslation>
+          </ContainerBtns>
+        </SidebarTranslation>
         <SidebarMenu>
           <SidebarLink to="about" onClick={toggle}>
-            Acerca de mí
+            {t("navlinks.about-me")}
           </SidebarLink>
           <SidebarLink to="skills" onClick={toggle}>
-            Habilidades
+            {t("navlinks.skills")}
           </SidebarLink>
           <SidebarLink to="projects" onClick={toggle}>
-            Proyectos
+            {t("navlinks.projects")}
           </SidebarLink>
           <SidebarLink to="contact" onClick={toggle}>
-            Contacto
+            {t("navlinks.contact")}
           </SidebarLink>
         </SidebarMenu>
         <SidebarBtn>

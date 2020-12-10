@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import {
   Nav,
   NavbarContainer,
@@ -7,29 +7,34 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavEnEs,
   NavTranslate,
-  // NavEnEs,
+  BtnTranslation,
 } from "./NavbarElements";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 
 const Navbar = ({ toggle }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
 
-  const [scrollNav, setScrollNav] = useState(false)
+  const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
-    if(window.scrollY >= 80) {
-      setScrollNav(true)
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
     } else {
-      setScrollNav(false)
+      setScrollNav(false);
     }
-  }
+  };
 
   useEffect(() => {
-    window.addEventListener('scroll', changeNav)
-  }, [])
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
+  const [t, i18n] = useTranslation("global");
 
   return (
     <>
@@ -51,7 +56,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Acerca de mí
+                {t("navlinks.about-me")}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -63,7 +68,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Habilidades
+                {t("navlinks.skills")}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -75,7 +80,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Proyectos
+                {t("navlinks.projects")}
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -87,13 +92,19 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Contacto
+                {t("navlinks.contact")}
               </NavLinks>
             </NavItem>
           </NavMenu>
-          {/* <NavTranslate>
-            <NavEnEs>ES | EN</NavEnEs>
-          </NavTranslate> */}
+          <NavTranslate>
+            <BtnTranslation onClick={() => i18next.changeLanguage("es")}>
+              ES
+            </BtnTranslation>
+            <NavEnEs>|</NavEnEs>
+            <BtnTranslation onClick={() => i18next.changeLanguage("en")}>
+               EN
+            </BtnTranslation>
+          </NavTranslate>
         </NavbarContainer>
       </Nav>
     </>

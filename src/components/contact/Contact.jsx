@@ -13,25 +13,27 @@ import {
   ContainerLinks,
 } from "./ContactElements";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <ContactContainer name="contact">
       <ContactMail>
         <ContainerMail>
           <ContactH3>
-            Si tienes alguna pregunta o necesitas contactarme, puedes escribirme
-            a este correo electrónico:
+          {t("contact.contact-mail")}
           </ContactH3>
           <a href="mailto:viancalaf@gmail.com">
-          <ContactBtn>Escribeme</ContactBtn>
+            <ContactBtn>{t("contact.contact-btn")}</ContactBtn>
           </a>
         </ContainerMail>
       </ContactMail>
       <ContactLinks>
         <ContainerLinks>
           <ContactH3Dark>
-            O<br></br> visita estos links
+          {t("contact.contact-links")}
           </ContactH3Dark>
           <ContactIcons>
             <Link

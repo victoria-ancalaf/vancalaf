@@ -75,4 +75,3 @@ export const PhotoVi = styled.div`
     height: 200px;
   }
 `;
-
