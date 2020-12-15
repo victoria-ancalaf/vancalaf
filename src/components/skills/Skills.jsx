@@ -1,6 +1,7 @@
 import React from "react";
 import {
   SkillsContainer,
+  SkillsIconContainer,
   IconContainer,
   JsIcon,
   SkillH1,
@@ -10,39 +11,58 @@ import {
   GitIcon,
   GithubIcon,
   FigmaIcon,
+  SkillsBg1,
+  SkillsBg2,
+  SkillsBg3,
 } from "./SkillsElements";
 
 const Skills = () => {
   return (
-    <SkillsContainer name='skills'>
-      <IconContainer>
-        <JsIcon />
-        <SkillH1>JavaScript</SkillH1>
-      </IconContainer>
-      <IconContainer>
-        <HtmlIcon />
-        <SkillH1>HTML5</SkillH1>
-      </IconContainer>
-      <IconContainer>
-        <CssIcon />
-        <SkillH1>CSS3</SkillH1>
-      </IconContainer>
-      <IconContainer>
-        <ReactIcon />
-        <SkillH1>React</SkillH1>
-      </IconContainer>
-      <IconContainer>
-        <GitIcon />
-        <SkillH1>Git</SkillH1>
-      </IconContainer>
-      <IconContainer>
-        <GithubIcon />
-        <SkillH1>GitHub</SkillH1>
-      </IconContainer>
-      <IconContainer>
-        <FigmaIcon />
-        <SkillH1>Figma</SkillH1>
-      </IconContainer>
+    <SkillsContainer name="skills">
+      <SkillsIconContainer>
+        <SkillsBg1>
+          <IconContainer>
+            <JsIcon />
+            <SkillH1>JavaScript</SkillH1>
+          </IconContainer>
+        </SkillsBg1>
+        <SkillsBg2>
+          <IconContainer>
+            <HtmlIcon />
+            <SkillH1>HTML5</SkillH1>
+          </IconContainer>
+        </SkillsBg2>
+        <SkillsBg3>
+          <IconContainer>
+            <CssIcon />
+            <SkillH1>CSS3</SkillH1>
+          </IconContainer>
+        </SkillsBg3>
+        <SkillsBg1>
+          <IconContainer>
+            <ReactIcon />
+            <SkillH1>React</SkillH1>
+          </IconContainer>
+        </SkillsBg1>
+        <SkillsBg1>
+          <IconContainer>
+            <GitIcon />
+            <SkillH1>Git</SkillH1>
+          </IconContainer>
+        </SkillsBg1>
+        <SkillsBg3>
+          <IconContainer>
+            <GithubIcon />
+            <SkillH1>GitHub</SkillH1>
+          </IconContainer>
+        </SkillsBg3>
+        <SkillsBg2>
+          <IconContainer>
+            <FigmaIcon />
+            <SkillH1>Figma</SkillH1>
+          </IconContainer>
+        </SkillsBg2>
+      </SkillsIconContainer>
     </SkillsContainer>
   );
 };

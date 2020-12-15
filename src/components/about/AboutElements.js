@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Vi from "../../img/Vi.jpg";
 import Victoria from "../../img/Victoria.jpg";
+import AboutBg from "../../img/about-bg.png";
 
 export const AboutContainer = styled.div`
   display: flex;
@@ -45,7 +46,8 @@ export const AboutPhoto = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 50px;
+  background-image: url(${AboutBg});
+  background-size: cover;
 
   @media screen and (max-width: 768px) {
     width: 100%;

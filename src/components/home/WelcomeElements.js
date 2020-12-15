@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import Video from "../../video/video.gif";
-
+import Welcome from "../../img/welcome-bg.png";
 
 export const WelcomeContainer = styled.div`
   display: flex;
   align-items: center;
-  background: #fbf8ff;
+  background: #FBF8FF;
   padding: 0 30px;
   height: 800px;
   position: relative;
@@ -27,14 +26,14 @@ export const VideoBg = styled.video`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-image: url(${Video});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 64%;
+  background-image: url(${Welcome});
+  background-repeat: repeat;
+  background-position: right;
+  background-size: contain;
 
   @media screen and (max-width: 768px) {
-    opacity: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 `;
 
@@ -58,29 +57,25 @@ export const WelcomeH1 = styled.h1`
 
   @media screen and (max-width: 768px) {
     font-size: 50px;
-    color: #fbf8ff;
   }
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
-    color: #fbf8ff;
   }
 `;
 
 export const WelcomeH2 = styled.h2`
   font-family: "Sarabun", sans-serif;
   font-weight: 100;
-  color: #5f36bf;
+  color: #4931a2;
   font-size: 29px;
   max-width: 600px;
 
   @media screen and (max-width: 768px) {
     font-size: 23px;
-    color: #fbf8ff;
   }
 
   @media screen and (max-width: 480px) {
     font-size: 18px;
-    color: #fbf8ff;
   }
 `;
