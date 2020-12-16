@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import CBg from "../../img/background.png";
+import { motion } from "framer-motion";
 
 export const ContactContainer = styled.div`
   display: flex;
@@ -48,10 +50,10 @@ export const ContactH3 = styled.h3`
   }
 `;
 
-export const ContactBtn = styled.button`
+export const ContactBtn = styled(motion.button)`
   width: 150px;
   height: 50px;
-  background: #5F36BF;
+  background: #5f36bf;
   border-radius: 5px;
   border-style: none;
   font-family: "Sarabun", sans-serif;
@@ -62,7 +64,7 @@ export const ContactBtn = styled.button`
 
   &:hover {
     background: #fefedf;
-    color: #5F36BF;
+    color: #5f36bf;
   }
 
   @media screen and (max-width: 768px) {
@@ -75,8 +77,11 @@ export const ContactBtn = styled.button`
 export const ContactLinks = styled.div`
   display: flex;
   width: 50%;
-  background: #E7E0F9;
+  background: #fbf8ff;
   justify-content: center;
+  background-image: url(${CBg});
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -100,7 +105,7 @@ export const ContactH3Dark = styled.h3`
   font-family: "Sarabun", sans-serif;
   font-weight: 300;
   font-size: 20px;
-  color: #9e7fe7;
+  color: #5f36bf;
   text-align: center;
 `;
 
@@ -119,11 +124,11 @@ export const ContactIcons = styled.div`
 export const LinkedinIcon = styled(FaLinkedin)`
   width: 60px;
   height: 60px;
-  color: #9e7fe7;
+  color: #5f36bf;
   cursor: pointer;
 
   &:hover {
-    color: #5F36BF;
+    color: #9e7fe7;
   }
 
   @media screen and (max-width: 768px) {
@@ -135,11 +140,11 @@ export const LinkedinIcon = styled(FaLinkedin)`
 export const GithubIcon = styled(FaGithubSquare)`
   width: 60px;
   height: 60px;
-  color: #9e7fe7;
+  color: #5f36bf;
   cursor: pointer;
 
   &:hover {
-    color: #5F36BF;
+    color: #9e7fe7;
   }
 
   @media screen and (max-width: 768px) {

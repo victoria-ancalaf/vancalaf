@@ -22,19 +22,17 @@ const Contact = () => {
     <ContactContainer name="contact">
       <ContactMail>
         <ContainerMail>
-          <ContactH3>
-          {t("contact.contact-mail")}
-          </ContactH3>
+          <ContactH3>{t("contact.contact-mail")}</ContactH3>
           <a href="mailto:viancalaf@gmail.com">
-            <ContactBtn>{t("contact.contact-btn")}</ContactBtn>
+            <ContactBtn whileHover={{ scale: 1.05 }}>
+              {t("contact.contact-btn")}
+            </ContactBtn>
           </a>
         </ContainerMail>
       </ContactMail>
       <ContactLinks>
         <ContainerLinks>
-          <ContactH3Dark>
-          {t("contact.contact-links")}
-          </ContactH3Dark>
+          <ContactH3Dark>{t("contact.contact-links")}</ContactH3Dark>
           <ContactIcons>
             <Link
               to={{

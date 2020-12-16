@@ -11,6 +11,7 @@ import {
   SiGithub,
   SiFigma,
 } from "react-icons/si";
+import { motion } from "framer-motion";
 
 export const SkillsContainer = styled.div`
   display: flex;
@@ -143,7 +144,7 @@ export const FigmaIcon = styled(SiFigma)`
   }
 `;
 
-export const SkillsBg1 = styled.div`
+export const SkillsBg1 = styled(motion.div)`
   width: 180px;
   height: 180px;
   background-image: url(${circle1});
@@ -163,7 +164,7 @@ export const SkillsBg1 = styled.div`
   }
 `;
 
-export const SkillsBg2 = styled.div`
+export const SkillsBg2 = styled(motion.div)`
   width: 180px;
   height: 180px;
   background-image: url(${circle2});
@@ -183,7 +184,7 @@ export const SkillsBg2 = styled.div`
   }
 `;
 
-export const SkillsBg3 = styled.div`
+export const SkillsBg3 = styled(motion.div)`
   width: 180px;
   height: 180px;
   background-image: url(${circle3});

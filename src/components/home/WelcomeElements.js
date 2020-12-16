@@ -4,7 +4,7 @@ import Welcome from "../../img/welcome-bg.png";
 export const WelcomeContainer = styled.div`
   display: flex;
   align-items: center;
-  background: #FBF8FF;
+  background: #fbf8ff;
   padding: 0 30px;
   height: 800px;
   position: relative;
@@ -27,8 +27,7 @@ export const VideoBg = styled.video`
   height: 100%;
   object-fit: cover;
   background-image: url(${Welcome});
-  background-repeat: repeat;
-  background-position: right;
+  background-repeat: round;
   background-size: contain;
 
   @media screen and (max-width: 768px) {
@@ -48,10 +47,10 @@ export const WelcomeContent = styled.div`
 `;
 
 export const WelcomeH1 = styled.h1`
-  font-family: "Thasadith", sans-serif;
+  font-family: "Sarabun", sans-serif;
   font-style: normal;
-  font-weight: 100;
-  color: #4931a2;
+  font-weight: 500;
+  color: #fff;
   font-size: 4rem;
   text-align: center;
 
@@ -67,7 +66,7 @@ export const WelcomeH1 = styled.h1`
 export const WelcomeH2 = styled.h2`
   font-family: "Sarabun", sans-serif;
   font-weight: 100;
-  color: #4931a2;
+  color: #fff;
   font-size: 29px;
   max-width: 600px;
 

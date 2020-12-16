@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   background: ${({ scrollNav }) =>
-    scrollNav ? "#5F36BF" : "rgba(158, 127, 231, 0.3)"};
+    scrollNav ? "#5F36BF" : "rgba(95, 54, 191, 0.3)"};
   height: 80px;
   margin-top: -80px;
 
