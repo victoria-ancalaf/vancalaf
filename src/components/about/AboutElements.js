@@ -54,6 +54,7 @@ export const AboutPhoto = styled.div`
     height: 50%;
     justify-content: center;
     align-items: flex-end;
+    flex-wrap: wrap;
     padding: 0;
   }
 `;
@@ -75,5 +76,19 @@ export const PhotoVi = styled.div`
   @media screen and (max-width: 768px) {
     width: 200px;
     height: 200px;
+  }
+`;
+
+export const AboutTitle = styled.h3`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    font-family: "Thasadith", sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    color: #3B2884;
   }
 `;

@@ -14,11 +14,16 @@ import {
   SkillsBg1,
   SkillsBg2,
   SkillsBg3,
+  SkillsTitle,
 } from "./SkillsElements";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <SkillsContainer name="skills">
+      <SkillsTitle>{t("navlinks.skills")}</SkillsTitle>
       <SkillsIconContainer>
         <SkillsBg1 whileHover={{ scale: 1.2 }}>
           <IconContainer>

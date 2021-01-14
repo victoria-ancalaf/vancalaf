@@ -3,6 +3,7 @@ import Poke from "../../img/Pokemon.png";
 import Coffee from "../../img/queen.png";
 import Comida from "../../img/comida.png";
 import Node from "../../img/node.png";
+import Mach from "../../img/mach.png";
 
 export const ProjectsContainer = styled.div`
   display: flex;
@@ -10,7 +11,7 @@ export const ProjectsContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: #fbf8ff;
 
   @media screen and (max-width: 768px) {
@@ -24,7 +25,7 @@ export const ProjectsCardContainer = styled.div`
   justify-content: space-evenly;
 
   @media screen and (max-width: 768px) {
-    padding-top: 200px;
+    padding-top: 70px;
     margin: 0px;
   }
 `;
@@ -85,6 +86,13 @@ export const MdLinks = styled.img.attrs({
   height: 150px;
 `;
 
+export const Hackathon = styled.img.attrs({
+  src: `${Mach}`,
+})`
+  width: 245px;
+  height: 150px;
+`;
+
 export const ProjectDescription = styled.div`
   width: 100%;
   height: 50%;
@@ -133,5 +141,20 @@ export const DescriptionBtnLight = styled(DescriptionBtn)`
   &:hover {
     background: #5f36bf;
     color: #ffffff;
+  }
+`;
+
+export const ProjectsTitle = styled.h3`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    font-family: "Thasadith", sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    color: #9E7FE7;
+    padding-bottom: 40px;
   }
 `;

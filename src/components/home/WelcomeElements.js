@@ -27,7 +27,7 @@ export const VideoBg = styled.video`
   height: 100%;
   object-fit: cover;
   background-image: url(${Welcome});
-  background-repeat: round;
+  background-repeat: no-repeat round;
   background-size: contain;
 
   @media screen and (max-width: 768px) {

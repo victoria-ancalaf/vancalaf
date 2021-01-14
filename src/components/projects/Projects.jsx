@@ -13,6 +13,8 @@ import {
   DescriptionContainerBtn,
   DescriptionBtn,
   DescriptionBtnLight,
+  ProjectsTitle,
+  Hackathon,
 } from "./ProjectsElements";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -22,7 +24,9 @@ const Projects = () => {
 
   return (
     <ProjectsContainer name="projects">
+     
       <ProjectsCardContainer>
+      <ProjectsTitle>{t("navlinks.projects")}</ProjectsTitle>
         <ProjectCard>
           <ProjectImage>
             <Pokemon />
@@ -122,6 +126,33 @@ const Projects = () => {
               <Link
                 to={{
                   pathname: "https://www.npmjs.com/package/md-links-vancalaf",
+                }}
+                target="_blank"
+              >
+                <DescriptionBtn>Demo</DescriptionBtn>
+              </Link>
+            </DescriptionContainerBtn>
+          </ProjectDescription>
+        </ProjectCard>
+        <ProjectCard>
+          <ProjectImage>
+            <Hackathon />
+          </ProjectImage>
+          <ProjectDescription>
+            <DescriptionP>{t("projects.mach")}</DescriptionP>
+            <DescriptionContainerBtn>
+              <Link
+                to={{
+                  pathname:
+                    "https://github.com/victoria-ancalaf/SCL014-Hackathon",
+                }}
+                target="_blank"
+              >
+                <DescriptionBtnLight>GitHub</DescriptionBtnLight>
+              </Link>
+              <Link
+                to={{
+                  pathname: "https://mach-points.web.app/",
                 }}
                 target="_blank"
               >

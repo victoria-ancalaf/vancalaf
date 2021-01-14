@@ -13,9 +13,10 @@
 },
   "projects": {
     "pokemon-project": "Pokémon database or Pokédex that includes Pokémon information from the Kanto and Johto region.",
-    "burger-queen-project": "Web app made to take clients orders from a tablet and have them sent to the kitchen, so that customers requests are prepared in order of arrival.",
+    "burger-queen-project": "Web app made to take clients orders from a tablet and have them sent to the kitchen, so that customers requests are prepared in order.",
     "cpt-project": "Proposal to redesign Comida para Todos website. Project executed along with interdisciplinary work teams (UX/Front-End).",
-    "md-links-project": "JS library that can read and analyze Markdown files. It can check the links found and report statistics."
+    "md-links-project": "JS library that can read and analyze Markdown files. It can check the links found and report statistics.",
+    "mach": "Mobile app proposal to the Hackathon SCL014 challenge (Online Open House). Sponsored by MACH."
   },
   "contact": {
     "contact-mail": "If you want to get in touch or to ask me something, please send me a message:",

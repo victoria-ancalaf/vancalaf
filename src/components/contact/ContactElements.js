@@ -34,6 +34,7 @@ export const ContainerMail = styled.div`
   @media screen and (max-width: 768px) {
     align-items: center;
     padding: 0 30px;
+    justify-content: flex-start;
   }
 `;
 
@@ -150,5 +151,20 @@ export const GithubIcon = styled(FaGithubSquare)`
   @media screen and (max-width: 768px) {
     width: 45px;
     height: 45px;
+  }
+`;
+
+export const ContactTitle = styled.h3`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    font-family: "Thasadith", sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    color: #fbf8ff;
+    padding: 80px;
   }
 `;

@@ -11,6 +11,7 @@ import {
   GithubIcon,
   ContainerMail,
   ContainerLinks,
+  ContactTitle
 } from "./ContactElements";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -22,6 +23,7 @@ const Contact = () => {
     <ContactContainer name="contact">
       <ContactMail>
         <ContainerMail>
+        <ContactTitle>{t("navlinks.contact")}</ContactTitle>
           <ContactH3>{t("contact.contact-mail")}</ContactH3>
           <a href="mailto:viancalaf@gmail.com">
             <ContactBtn whileHover={{ scale: 1.05 }}>

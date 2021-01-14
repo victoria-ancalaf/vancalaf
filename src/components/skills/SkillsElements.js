@@ -25,7 +25,7 @@ export const SkillsContainer = styled.div`
   @media screen and (max-width: 768px) {
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-content: space-evenly;
   }
 `;
 
@@ -201,5 +201,19 @@ export const SkillsBg3 = styled(motion.div)`
     margin: 5px;
     width: 120px;
     height: 120px;
+  }
+`;
+
+export const SkillsTitle = styled.h3`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    font-family: "Thasadith", sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    color: #fbf8ff;
   }
 `;
