@@ -1,0 +1,26 @@
+{
+  "navlinks": {
+    "about-me": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+      "subtitle-home": "Front-End Developer"
+  },
+  "about": {
+    "about-paragraph": "I'm a Front-End Developer and Translator (English-Spanish). I love learning new things and I'm always trying to challenge myself to perform to the best of my abilities, in this way I can show my perseverance, adaptability, honesty and teamwork."
+},
+  "projects": {
+    "pokemon-project": "Pokémon database or Pokédex that includes Pokémon information from the Kanto and Johto region.",
+    "burger-queen-project": "Web app made to take clients orders from a tablet and have them sent to the kitchen, so that customers requests are prepared in order.",
+    "cpt-project": "Proposal to redesign Comida para Todos website. Project executed along with interdisciplinary work teams (UX/Front-End).",
+    "md-links-project": "JS library that can read and analyze Markdown files. It can check the links found and report statistics.",
+    "mach": "Mobile app proposal to the Hackathon SCL014 challenge (Online Open House). Sponsored by MACH."
+  },
+  "contact": {
+    "contact-mail": "If you want to get in touch or to ask me something, please send me a message:",
+    "contact-btn": "Email me",
+    "contact-links": "Or you can visit these links"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "navlinks": {
+    "about-me": "Acerca de mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "home": {
+      "subtitle-home": "Desarrolladora Front-End"
+  },
+  "about": {
+    "about-paragraph": "Desarrolladora Front-End y Traductora Inglés-Español de profesión. Tengo gran interés en adquirir nuevos conocimientos y busco la forma de desafiarme a mi misma, para ver que tan lejos puedo llegar, de esta forma puedo demostrar mi perseverancia, adaptabilidad, honestidad y trabajo colaborativo."
+},
+  "projects": {
+    "pokemon-project": "Buscador Pokémon o Pokédex. Contiene el listado de 251 Pokémon, correspondientes a la región de Kanto y Johto.",
+    "burger-queen-project": "Web app para tomar pedidos desde una tablet y que estos sean enviados a cocina, para que se preparen ordenada y eficientemente.",
+    "cpt-project": "Propuesta de mejora al sitio web de Comida Para Todos. Trabajo en conjunto con equipos interdisciplinarios (UX/Front-End).",
+    "md-links-project": "Librería JS para leer y analizar archivos en formato Markdown. Verifica los links encontrados y reporta estadísticas.",
+    "mach": "Propuesta de app móvil para desafío Hackathon SCL014 (Open House Virtual). Problemática propuesta y patrocinada por MACH."
+  },
+  "contact": {
+    "contact-mail": "Si tienes alguna pregunta o necesitas contactarme, puedes escribirme a este correo electrónico:",
+    "contact-btn": "Escribeme",
+    "contact-links": "O visita estos links"
+  }
+}
